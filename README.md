@@ -1,5 +1,6 @@
-# gitgan78.github.io
+# Gagan A V
 
-Hello!
+##Hello!
 
-Ee sala cup namde!
+[LinkedIn](https://www.linkedin.com/in/gagan-anekonda-veereshi-81a463219)
+[Telegram](t.me/gagan_av)
