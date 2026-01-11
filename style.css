@@ -17,7 +17,8 @@
     /* Dark Theme Variables */
     --background-color: #1a1a1a;
     --text-color: #f0f0f0;
-    --link-color: #8ab4f8; /* Lighter blue for dark mode */
+    --link-color: #8ab4f8;
+    /* Lighter blue for dark mode */
     --header-bg: #2a2a2a;
     --border-color: #3e3e3e;
     --news-bg: #2a2a2a;
@@ -29,11 +30,19 @@
    ================================= */
 
 /* Ensure HTML and BODY span the full viewport height */
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+/* Apply border-box globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 /* Set up the body for the Sticky Footer (Flexbox) */
@@ -42,11 +51,12 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
-    
+
     /* Sticky Footer properties */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Minimum height is 100% of viewport */
+    min-height: 100vh;
+    /* Minimum height is 100% of viewport */
 }
 
 /* =================================
@@ -63,7 +73,7 @@ body {
 
 .nav-links a {
     /* Top bar element font slightly bigger */
-    font-size: 1.15em; 
+    font-size: 1.15em;
     text-decoration: none;
     color: var(--text-color);
     margin-right: 25px;
@@ -92,6 +102,7 @@ body {
     padding: 5px;
     transition: color 0.3s;
 }
+
 #theme-toggle:hover {
     color: var(--link-color);
 }
@@ -103,22 +114,24 @@ body {
 
 /* Main content grows to push the footer down */
 main {
-    flex-grow: 1; /* Key for sticky footer */
-    
+    flex-grow: 1;
+    /* Key for sticky footer */
+
     /* Two-column layout settings */
     display: flex;
-    max-width: 1200px; /* Center the main content */
+    max-width: 1200px;
+    /* Center the main content */
     margin: 40px auto;
     padding: 0 20px;
-    gap: 40px; 
+    gap: 40px;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 /* Left Column: Profile, Text, Links */
 .main-content-left {
-    flex: 2; 
-    min-width: 300px; 
+    flex: 2;
+    min-width: 300px;
 }
 
 .profile-section {
@@ -151,15 +164,15 @@ main {
 
 /* Right Column: News Box */
 .news-section {
-    flex: 1; 
-    min-width: 250px; 
-    
+    flex: 1;
+    min-width: 250px;
+
     padding: 20px;
-    border: 1px solid var(--border-color); 
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     background-color: var(--news-bg);
-    box-shadow: var(--box-shadow); 
-    align-self: flex-start; 
+    box-shadow: var(--box-shadow);
+    align-self: flex-start;
 }
 
 .news-section h3 {
@@ -170,7 +183,7 @@ main {
 }
 
 .news-section ul {
-    list-style-type: disc; 
+    list-style-type: disc;
     padding-left: 20px;
     margin: 0;
 }
@@ -198,19 +211,24 @@ footer {
    ================================= */
 @media (max-width: 800px) {
     .home-layout {
-        flex-direction: column; /* Stack columns vertically */
+        flex-direction: column;
+        /* Stack columns vertically */
         padding: 0 15px;
     }
-    .main-content-left, .news-section {
-        flex: none; 
-        width: 100%; 
+
+    .main-content-left,
+    .news-section {
+        flex: none;
+        width: 100%;
     }
+
     .news-section {
         /* The 'order: -1;' rule has been removed here. 
            This ensures the News section now appears AFTER the main profile content 
            on mobile, following the HTML order. */
         margin-bottom: 20px;
     }
+
     .navbar {
         padding: 15px 20px;
     }
