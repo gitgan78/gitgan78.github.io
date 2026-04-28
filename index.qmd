@@ -1,0 +1,58 @@
+---
+title: "Gagan Anekonda Veereshi"
+description-meta: "Personal website of Gagan Anekonda Veereshi"
+image: "pic.jpeg"
+
+about:
+    id: info
+    template: trestles
+    links:
+    - icon: envelope
+      text: 'E-mail: avavg78 [at] gmail [dot] com' 
+      href: mailto:gagan.av78@gmail.com
+
+    - icon: github
+      text: Github
+      href: https://github.com/gitgan78
+      target: _blank
+    
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=qQBOYzAAAAAJ&hl=en&oi=ao
+      target: _blank
+
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/gagan-anekonda-veereshi-81a463219
+      target: _blank
+  
+    - icon: globe
+      text: Website
+      href: https://quagan.xyz
+      target: _blank
+      
+    - text: "{{< ai orcid >}} ORCID"   
+      href: https://orcid.org/0009-0006-6703-8590
+      target: _blank
+
+---
+
+:::{#info}
+##### Hi, I am Gagan Anekonda Veereshi. Here's my short bio:
+
+### Experience:
+1. Work Student for Quantum Technology and Data Science, [data cybernetics](https://data-cybernetics.com/en/), Nov 2024 - Aug 2025
+
+2. Student Research Assistant (HiWi), [Center for Optical Quantum Technologies](https://www.physik.uni-hamburg.de/en/iqp/zoq.html), March 2023 - Sep 2024
+
+3. Research Intern, [Society for Space Education Research and Development](https://www.linkedin.com/company/sserd/), Nov 2021 - Dec 2021
+
+### Education:
+1. Master of Science in Physics, [University of Hamburg](https://www.uni-hamburg.de/en.html), Oct 2022 - Jul 2025
+
+2. Bachelor of Science in Physics, Chemistry and Mathematics, [Christ (Deemed to be University)](https://www.christuniversity.in/), Jun 2019 - May 2022
+
+### Research Metrics:
+
+1. Citations: 12
+2. h-index: 1
+3. i-10 index: 1
