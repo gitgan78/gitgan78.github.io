@@ -6,6 +6,7 @@ image: "pic.jpeg"
 about:
     id: info
     template: trestles
+    image-width: 50%
     links:
     - icon: envelope
       text: 'E-mail: avavg78 [at] gmail [dot] com' 
